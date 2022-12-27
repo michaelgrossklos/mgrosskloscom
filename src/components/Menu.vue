@@ -53,7 +53,19 @@
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              <a
+              <!--              <a
+                              v-for="item in navigation"
+                              :key="item.name"
+                              :aria-current="item.current ? 'page' : undefined"
+                              :class="[
+                                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                'rounded-md px-3 py-2 text-sm font-medium',
+                              ]"
+                              :href="item.href"
+                              :target="item.target"
+                              >{{ item.name }}</a
+                            >-->
+              <router-link
                 v-for="item in navigation"
                 :key="item.name"
                 :aria-current="item.current ? 'page' : undefined"
@@ -61,10 +73,11 @@
                   item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                   'rounded-md px-3 py-2 text-sm font-medium',
                 ]"
-                :href="item.href"
                 :target="item.target"
-                >{{ item.name }}</a
+                :to="item.href"
               >
+                {{ item.name }}
+              </router-link>
             </div>
           </div>
         </div>
