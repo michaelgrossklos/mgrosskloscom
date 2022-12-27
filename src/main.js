@@ -8,8 +8,8 @@ import Screencasts from './components/Screencasts.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/screencasts', name: 'screencasts', component: Screencasts },
     { path: '/', name: 'home', component: Home },
+    { path: '/screencasts', name: 'screencasts', component: Screencasts },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
