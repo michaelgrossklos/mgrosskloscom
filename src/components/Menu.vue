@@ -8,7 +8,7 @@
     { name: 'Warum ich?', href: '/#warumich', current: false, hash: '#warumich', target: '_self' },
     { name: 'Screencasts', href: '/screencasts', current: false, hash: '', target: '_self' },
     { name: 'Impressum / Kontakt', href: '#kontakt', current: false, hash: '#kontakt', target: '_self' },
-    { name: 'AGB', href: 'AGB.pdf', current: false, hash: '', target: '_blank' },
+    { name: 'AGB', href: '../assets/AGB.pdf', current: false, hash: '', target: '_blank' },
   ]
 </script>
 
