@@ -1,7 +1,7 @@
 <script setup>
 import {EnvelopeIcon, PhoneIcon} from '@heroicons/vue/20/solid'
-import Menu from './Menu.vue'
-import Footer from './Footer.vue'
+import Menu from '../components/Menu.vue'
+import Footer from '../components/Footer.vue'
 
 </script>
 
