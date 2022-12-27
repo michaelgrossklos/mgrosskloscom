@@ -9,7 +9,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', name: 'home', component: Home },
-    { path: '/screencasts', name: 'screencasts', component: Screencasts },
+    { path: 'screencasts', name: 'screencasts', component: Screencasts },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
